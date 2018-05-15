@@ -33,10 +33,12 @@
     // ...
   }
   ```
+  
+写到这，我继续往下翻github的doc文档，恩~ 下面都是介绍怎么使用material-components了，真的开心，马上就可以使用google最新的控件了，想想就贼G2激动！
+一运行，mmp事情果然没有那么简单，眉头还是皱晚了，没有事先察觉。
 
-   
-
-
+> Android resource linking failed
+Output:  C:\Android Project\MyApplication\app\build\intermediates\incremental\mergeDebugResources\merged.dir\values-v28\values-v28.xml:7: error: resource android:attr/dialogCornerRadius not found
 
 
 
