@@ -7,7 +7,7 @@
   
 ## 1.导入material-components-android
 
-不得不说，**material-components-android**的GitHub导入写的真的过分，啥都没有，导入一瞬间，报错一整天！最后我还是老老实实用[Android Studio 3.2 Canary](https://developer.android.google.cn/studio/preview/)版本来写了。 强烈推荐使用3.2，更新了很多新功能。
+不得不说，**material-components-android**的GitHub导入写的真的过分，啥都没有，不过也可能是我功力尚浅没找到，知道的大佬勿喷，*导入一瞬间，报错一整天*！最后我还是老老实实用[Android Studio 3.2 Canary](https://developer.android.google.cn/studio/preview/)版本来写了。 强烈推荐使用3.2，更新了很多新功能。
    
    
   **话不多说，直接就是干**
