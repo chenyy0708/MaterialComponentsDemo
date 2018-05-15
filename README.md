@@ -5,7 +5,10 @@
 
   [Material Design 2 更新戳这里](https://juejin.im/entry/5af4ff4d6fb9a07ac0224a16)
   
-## 1. BottomAppBar
+## 1.导入material-components-android
+
+  不得不说，**material-components-android**的GitHub导入写的真的过分，啥都没有，导入一瞬间，报错一整天！
+
 
 
 
