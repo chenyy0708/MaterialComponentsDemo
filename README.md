@@ -41,8 +41,10 @@
 
 
 
-> Android resource linking failed
+```
+Android resource linking failed
 Output:  C:\Android Project\MyApplication\app\build\intermediates\incremental\mergeDebugResources\merged.dir\values-v28\values-v28.xml:7: error: resource android:attr/dialogCornerRadius not found
+```
 
 
 
