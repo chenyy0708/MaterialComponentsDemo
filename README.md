@@ -12,7 +12,7 @@
    
   **话不多说，直接就是干**
   
-  >  第一步打开项目的build.gradle文件添加jcenter和google
+>  第一步打开项目的build.gradle文件添加jcenter和google
  
   ```
   allprojects {
@@ -24,7 +24,7 @@
     }
   }
   ```
-  >  第二步将库添加到app依赖
+>  第二步将库添加到app依赖
   
   ```
   dependencies {
