@@ -1,11 +1,20 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- New MaterialComponents attributes. -->
+        <item name="colorPrimaryLight">?attr/colorPrimary</item>
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorSecondaryLight">?attr/colorPrimaryLight</item>
+        <item name="colorSecondaryDark">?attr/colorPrimaryDark</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="snackbarButtonStyle">?attr/borderlessButtonStyle</item>
+
     </style>
 
 </resources>

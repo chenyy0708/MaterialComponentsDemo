@@ -1,6 +1,8 @@
 package com.chen.material.materialcomponentsdemo.ui.main;
 
 import androidx.lifecycle.ViewModelProviders;
+
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.chen.material.materialcomponentsdemo.BottomAppBarActivity;
 import com.chen.material.materialcomponentsdemo.R;
 
 public class MainFragment extends Fragment {
@@ -23,7 +26,17 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_fragment, container, false);
+
+        View inflate = inflater.inflate(R.layout.main_fragment, container, false);
+
+        inflate.findViewById(R.id.bt1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),BottomAppBarActivity.class));
+            }
+        });
+
+        return inflate;
     }
 
     @Override
