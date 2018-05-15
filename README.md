@@ -5,7 +5,7 @@
 
 [Material Design 2 更新戳这里](https://juejin.im/entry/5af4ff4d6fb9a07ac0224a16)
   
-## 1.导入material-components-android
+## 1. 导入material-components-android
 
 不得不说，**material-components-android**的GitHub导入写的真的过分，啥都没有，不过也可能是我功力尚浅没找到，知道的大佬勿喷，*导入一瞬间，报错一整天*！最后我还是老老实实用[Android Studio 3.2 Canary](https://developer.android.google.cn/studio/preview/)版本来写了。 强烈推荐使用3.2，更新了很多新功能。
    
@@ -105,4 +105,12 @@ dependencies {
 }
 
 ```
+
+
+## 2. MaterialComponents控件
+
+### 2.1 BottomAppBar
+
+
+
 
