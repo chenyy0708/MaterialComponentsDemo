@@ -25,6 +25,7 @@
         app:backgroundTint="@color/colorPrimary"
         app:fabAlignmentMode="end"
         app:fabAttached="true"
+        app:navigationIcon="@mipmap/ic_launcher"
         android:layout_gravity="bottom" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
