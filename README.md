@@ -40,5 +40,8 @@
 > Android resource linking failed
 Output:  C:\Android Project\MyApplication\app\build\intermediates\incremental\mergeDebugResources\merged.dir\values-v28\values-v28.xml:7: error: resource android:attr/dialogCornerRadius not found
 
+google出来很多都是使用最新的`implementation 'com.android.support:appcompat-v7:28.0.0-alpha1`支持库，结果然并软，后来在[issues](https://github.com/material-components/material-components-android/issues/93)中发现了一位大佬的答案。更新`compileSdkVersion` Android P预览版即可，因为在使用28.0.0-alpha1的所有支持库时，缺少属性时会出现这个问题。
+
+![更新compileSdkVersion](https://github.com/chenyy0708/MaterialComponentsDemo/blob/master/images/%E6%88%AA%E5%9B%BE1.jpg)
 
 
