@@ -4,18 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/bt_left"
         android:text="左"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimary"
+        />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/bt_right"
         android:layout_gravity="right"
         android:text="右"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimary"
+        />
 
     <!-- Other components and views -->
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -23,9 +28,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:backgroundTint="@color/colorPrimary"
-        app:fabAlignmentMode="end"
+        app:fabAlignmentMode="center"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:fabAttached="true"
         app:navigationIcon="@mipmap/ic_launcher"
+        app:fabCradleVerticalOffset="12dp"
         android:layout_gravity="bottom" />
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
