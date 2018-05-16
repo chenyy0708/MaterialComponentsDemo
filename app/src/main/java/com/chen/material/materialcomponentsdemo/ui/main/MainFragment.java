@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.chen.material.materialcomponentsdemo.BottomAppBarActivity;
+import com.chen.material.materialcomponentsdemo.BottomNavigationActivity;
 import com.chen.material.materialcomponentsdemo.R;
 
 public class MainFragment extends Fragment {
@@ -33,6 +34,13 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(),BottomAppBarActivity.class));
+            }
+        });
+
+        inflate.findViewById(R.id.bt2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),BottomNavigationActivity.class));
             }
         });
 

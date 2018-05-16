@@ -11,4 +11,11 @@
         android:text="BottomAppBar+FAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:textAllCaps="false"
+        android:text="BottomNavigationView "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
