@@ -109,7 +109,58 @@ dependencies {
 
 ## 2. MaterialComponents控件
 
+*  Bottom App Bars
+*  Bottom Navigation
+*  Bottom Sheets
+*  Chips
+*  Collapsing Toolbars
+*  Floating Action Buttons
+*  Meiter Botton 
+*  Meiter Card
+*  Meiter Bottom Sheets
+* Navigation Views
+* Snackbars
+* Tab Layout
+* Text Fields
+* Top App Bars
+
+
+
 ### 2.1 BottomAppBar
+
+>这次google大会上也展示了这个控件，配合FloatingActionButton能实现很炫酷的组合形状。
+
+在使用BottomAppBar之前如果app的style Theme没有使用以下属性的话，那么可以将BottomAppBar Material样式直接应用到XML中的窗口小部件。
+
+* `Theme.MaterialComponents`
+* `Theme.MaterialComponents.NoActionBar`
+* `Theme.MaterialComponents.Light`
+* `Theme.MaterialComponents.Light.NoActionBar`
+* `Theme.MaterialComponents.Light.DarkActionBar`
+
+### Material Styles
+`style="@style/Widget.MaterialComponents.BottomAppBar"`
+
+
+控件的基本属性
+
+
+| 属性名        | 布局属性           |  说明 |
+| :----------------: |:-------------:| :-----:|
+| Background Tint      | app:backgroundTint | 设置背景颜色，调用background是不生效的  |
+| FAB Alignment Mode      | app:fabAlignmentMode      |   起始对齐模式，center、end |
+| FAB Cradle Margin      |    app:fabCradleMargin | 改变这个值会增加或减少FAB和BottomAppBar之间的视距。  |
+| FAB Attached     |    app:fabAttached | 控制FAB和BottomAppBar的分离  |
+| FAB Cradle Corner Radius     |   app:fabCradleRoundedCornerRadius | 指定切口周围角的圆度。  |
+| FAB Vertical Offset     |   app:fabCradleVerticalOffset | 指定FAB和BottomAppBar之间的垂直偏移量。  |
+
+
+
+* fabCradleVerticalOffset是指定FAB和BottomAppBar之间的垂直偏移量。如果fabCradleVerticalOffset为0，则FAB的中心将与BottomAppBar的顶部对齐。
+
+* 通过调用setFabAlignmentMode（int），可以将FAB对齐到中心（FAB_ALIGNMENT_MODE_CENTER）或对齐右边（FAB_ALIGNMENT_MODE_END）。默认是有动画的。这可以与片段过渡相对协调。
+
+
 
 
 
