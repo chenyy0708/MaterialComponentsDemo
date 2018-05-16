@@ -1,15 +1,13 @@
 package com.chen.material.materialcomponentsdemo;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
+import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.MenuItem;
-import android.widget.TextView;
 
 public class BottomNavigationActivity extends AppCompatActivity {
 
@@ -43,6 +41,8 @@ public class BottomNavigationActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        // 设置选中
+        navigation.setSelectedItemId(R.id.navigation_home);
     }
 
 }
