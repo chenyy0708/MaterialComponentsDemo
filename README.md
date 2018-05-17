@@ -110,7 +110,7 @@ dependencies {
 ## 2. MaterialComponents控件
 
 *  [Bottom App Bars](https://github.com/chenyy0708/MaterialComponentsDemo#21-bottomappbar)
-*  [Bottom Navigation](https://github.com/chenyy0708/MaterialComponentsDemo/blob/master/README.md#21-bottom-navigation)
+*  [Bottom Navigation](https://github.com/chenyy0708/MaterialComponentsDemo#21-bottom-navigation)
 *  Bottom Sheets
 *  Chips
 *  Collapsing Toolbars
