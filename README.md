@@ -109,7 +109,7 @@ dependencies {
 
 ## 2. MaterialComponents控件
 
-*  [Bottom App Bars](https://github.com/chenyy0708/MaterialComponentsDemo/blob/master/README.md#21-bottomappbar)
+*  Bottom App Bars
 *  Bottom Navigation
 *  Bottom Sheets
 *  Chips
@@ -159,6 +159,77 @@ dependencies {
 * fabCradleVerticalOffset是指定FAB和BottomAppBar之间的垂直偏移量。如果fabCradleVerticalOffset为0，则FAB的中心将与BottomAppBar的顶部对齐。
 
 * 通过调用setFabAlignmentMode（int），可以将FAB对齐到中心（FAB_ALIGNMENT_MODE_CENTER）或对齐右边（FAB_ALIGNMENT_MODE_END）。默认是有动画的。这可以与片段过渡相对协调。
+
+### 2.1 Bottom Navigation
+
+> BottomNavigationView creates bottom navigation bars, making it easy to explore and switch between top-level content views with a single tap.
+This pattern can be used when you have between 3 and 5 top-level destinations to navigate to.
+
+> BottomNavigationView创建底部导航栏，使用户只需轻点一下即可轻松浏览和切换顶级内容视图。 当您有3到5个顶层目的地导航到时，可以使用此模式。
+
+#### 开始使用
+
+1. 创建一个Menu布局，最多5个导航目标（BottomNavigationView不支持超过5个）。
+2. 在xml中放置BottomNavigationView。
+3. 将BottomNavigationView上的app：menu属性设置为您的菜单资源布局。
+4. 使用setOnNavigationItemSelectedListener（...）监听选择点击事件。
+
+```
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomNavigationActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/title_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
+        app:itemIconTint="@drawable/bottom_navigation_colors"
+        app:itemTextColor="@drawable/bottom_navigation_colors"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+app：itemIconTint(图标选择颜色) 和app：itemTextColor(文字选择颜色) 采用ColorStateList而不是简单的设置颜色。这样我们可以定义一个selector 来设置选中和未选中的颜色。
+
+```
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:color="@color/colorPrimary" />
+    <item
+        android:state_checked="false"
+        android:color="@android:color/darker_gray" />
+</selector>
+```
+
+app:itemIconSize可以设置导航图标的大小。
+
+
+### 2.3 Bottom Sheets
+
 
 
 
