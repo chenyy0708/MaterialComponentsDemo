@@ -5,17 +5,33 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/bt1"
-        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="BottomAppBar+FAB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textAllCaps="false" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/bt2"
-        android:textAllCaps="false"
-        android:text="BottomNavigationView "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="BottomNavigationView "
+        android:textAllCaps="false" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Sheets"
+        android:textAllCaps="false" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Sheets Dialog"
+        android:textAllCaps="false" />
 </LinearLayout>

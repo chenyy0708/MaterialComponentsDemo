@@ -16,10 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BottomAppBarActivity" />
+        <activity
+            android:name=".BottomAppBarActivity"
+            android:label="BottomAppBarActivity" />
         <activity
             android:name=".BottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation"></activity>
+            android:label="BottomNavigationActivity" />
+        <activity
+            android:name=".BottomSheetsActivity"
+            android:label="BottomSheetsActivity" />
+        <activity
+            android:name=".BottomSheetDialogActivity"
+            android:label="BottomSheetDialogActivity" />
     </application>
 
 </manifest>
